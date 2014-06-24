@@ -21,6 +21,10 @@
 		45548B2F1959B95D005A6299 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45548B111959B95D005A6299 /* UIKit.framework */; };
 		45548B371959B95D005A6299 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45548B351959B95D005A6299 /* InfoPlist.strings */; };
 		45548B391959B95D005A6299 /* DesignPatternAdapterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45548B381959B95D005A6299 /* DesignPatternAdapterTests.m */; };
+		45548B441959B984005A6299 /* DPALegacyLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 45548B431959B984005A6299 /* DPALegacyLine.m */; };
+		45548B471959BB12005A6299 /* DPALegacyRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 45548B461959BB12005A6299 /* DPALegacyRectangle.m */; };
+		45548B4B1959BBE5005A6299 /* DPALine.m in Sources */ = {isa = PBXBuildFile; fileRef = 45548B4A1959BBE5005A6299 /* DPALine.m */; };
+		45548B4E1959BCF2005A6299 /* DPARectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 45548B4D1959BCF2005A6299 /* DPARectangle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,15 @@
 		45548B341959B95D005A6299 /* DesignPatternAdapterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DesignPatternAdapterTests-Info.plist"; sourceTree = "<group>"; };
 		45548B361959B95D005A6299 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45548B381959B95D005A6299 /* DesignPatternAdapterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternAdapterTests.m; sourceTree = "<group>"; };
+		45548B421959B984005A6299 /* DPALegacyLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPALegacyLine.h; sourceTree = "<group>"; };
+		45548B431959B984005A6299 /* DPALegacyLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPALegacyLine.m; sourceTree = "<group>"; };
+		45548B451959BB12005A6299 /* DPALegacyRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPALegacyRectangle.h; sourceTree = "<group>"; };
+		45548B461959BB12005A6299 /* DPALegacyRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPALegacyRectangle.m; sourceTree = "<group>"; };
+		45548B481959BBAE005A6299 /* DPAShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPAShape.h; sourceTree = "<group>"; };
+		45548B491959BBE5005A6299 /* DPALine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPALine.h; sourceTree = "<group>"; };
+		45548B4A1959BBE5005A6299 /* DPALine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPALine.m; sourceTree = "<group>"; };
+		45548B4C1959BCF2005A6299 /* DPARectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPARectangle.h; sourceTree = "<group>"; };
+		45548B4D1959BCF2005A6299 /* DPARectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPARectangle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +95,15 @@
 		45548B011959B95D005A6299 = {
 			isa = PBXGroup;
 			children = (
+				45548B4C1959BCF2005A6299 /* DPARectangle.h */,
+				45548B4D1959BCF2005A6299 /* DPARectangle.m */,
+				45548B491959BBE5005A6299 /* DPALine.h */,
+				45548B4A1959BBE5005A6299 /* DPALine.m */,
+				45548B481959BBAE005A6299 /* DPAShape.h */,
+				45548B451959BB12005A6299 /* DPALegacyRectangle.h */,
+				45548B461959BB12005A6299 /* DPALegacyRectangle.m */,
+				45548B421959B984005A6299 /* DPALegacyLine.h */,
+				45548B431959B984005A6299 /* DPALegacyLine.m */,
 				45548B131959B95D005A6299 /* DesignPatternAdapter */,
 				45548B321959B95D005A6299 /* DesignPatternAdapterTests */,
 				45548B0C1959B95D005A6299 /* Frameworks */,
@@ -250,7 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45548B441959B984005A6299 /* DPALegacyLine.m in Sources */,
+				45548B4E1959BCF2005A6299 /* DPARectangle.m in Sources */,
+				45548B471959BB12005A6299 /* DPALegacyRectangle.m in Sources */,
 				45548B241959B95D005A6299 /* DPAViewController.m in Sources */,
+				45548B4B1959BBE5005A6299 /* DPALine.m in Sources */,
 				45548B1E1959B95D005A6299 /* DPAAppDelegate.m in Sources */,
 				45548B1A1959B95D005A6299 /* main.m in Sources */,
 			);

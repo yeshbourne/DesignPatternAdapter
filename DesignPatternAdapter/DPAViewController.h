@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPARectangle.h"
+#import "DPALine.h"
+#import "DPAShape.h"
 
 @interface DPAViewController : UIViewController
+
+@property(strong,nonatomic)id<DPAShape> shapeLine,shapeRectangle;
 
 @end
